@@ -1,5 +1,143 @@
-.edit{
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800;900&display=swap");
 
-display: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
 
+.fullscreen {
+  background-color: #1e1e1e;
+}
+
+.pencil {
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+  display: flex;
+  justify-self: center;
+}
+
+header {
+  background-color: #131212;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 15px 0;
+  align-items: center;
+
+  color: #f0e2e2;
+}
+
+header h1 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  text-align: center;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+
+  padding: 0 10vw;
+}
+
+.equipes {
+  display: flex;
+
+  width: 100%;
+  justify-content: space-between;
+}
+
+.equipe1,
+.equipe2 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+}
+
+.equipes div h1 {
+  color: #f0e2e2;
+}
+
+.equipes div span {
+  color: #ff2424;
+  font-weight: 700;
+  font-size: 128px;
+  line-height: 100px;
+
+  margin-bottom: 20px;
+}
+
+.equipes div button {
+  background-color: #ff2424;
+  color: #f0e2e2;
+  border: 0;
+  width: 100%;
+
+  border-radius: 5px;
+  padding: 5px;
+
+  font-weight: 700;
+  font-size: 24px;
+}
+
+#zerar {
+  border: 3px solid #ff2424;
+  background: transparent;
+  width: 100%;
+  border-radius: 5px;
+
+  font-weight: 700;
+  font-size: 38px;
+
+  padding: 10px 0;
+
+  color: #f0e2e2;
+}
+
+.edit {
+  display: none;
+  background-color: #131212;
+  position: fixed;
+  z-index: 1;
+
+  top: 30vh;
+  left: 30vw;
+
+  padding: 20px 40px;
+
+  border-radius: 8px;
+}
+
+.edit h1 {
+  font-weight: 700;
+  font-size: 48px;
+
+  text-align: center;
+  color: #fff9e6;
+}
+
+.edit label {
+  color: #fff9e6;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.edit input {
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+  background-color: #fff9e6;
+  padding: 5px 10px;
+
+  font-weight: 400;
+  font-size: 24px;
+  color: #1e1e1e;
 }

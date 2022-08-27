@@ -17,13 +17,14 @@
     <div class="container">
       <!-- Cabeçalho da Página -->
       <header>
-        <img onclick="mostrarEditar()" src="images/pencil.svg" alt="" srcset="" />
+        <img onclick="mostrarEditar()" src="images/pencil.svg" class="pencil"/>
         <h1>Truco +3</h1>
       </header>
  <!-- Fim do Cabeçalho -->
 
  <!-- Container do Contador -->
       <div class="game">
+        <div class="equipes">
         <div class="equipe1">
           <h1 id="nos">Nós</h1>
           <span id="pontosEquipe1">0</span>
@@ -33,6 +34,7 @@
           <button value="9" class="button1">+9</button>
           <button value="12" class="button1">+12</button>
         </div>
+        <span>x</span>
         <div class="equipe2">
           <h1 id="eles">Eles</h1>
           <span id="pontosEquipe2">0</span>
@@ -42,12 +44,22 @@
           <button class="button2" value="9">+9</button>
           <button class="button2" value="12">+12</button>
         </div>
-
+</div>
          <!-- Fim do Contador-->
 
          <!-- Container de editar os nomes -->
 
-        <div class="edit">
+      
+
+
+        <!-- Fim do container de editar os nomes -->
+
+        <button onclick="zerarJogo()" id='zerar'>Zerar Jogo</button>
+      </div>
+    </div>
+
+    <div class="edit">
+      <h1>Editar</h1>
 <label for="equipe1Name">Equipe 1</label>
 <input id="equipe1Name" type="text" value="Nós">
 
@@ -57,13 +69,6 @@
 <button onclick="editar()">Salvar</button>
 <button onclick="resetar()">Resetar</button>
 
-        </div>
-
-
-        <!-- Fim do container de editar os nomes -->
-
-        <button onclick="zerarJogo()">Zerar Jogo</button>
-      </div>
     </div>
     <script src="js/main.js"></script>
   </body>

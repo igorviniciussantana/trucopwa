@@ -89,8 +89,14 @@ function mostrarEditar(){
 
 
 const editDiv = document.querySelector('.edit');
+var container = document.querySelector('.container');
 
-editDiv.style.display = 'block'
+container.style.cssText = 'filter: opacity(30%)'
+
+editDiv.style.cssText = `display: flex; 
+flex-direction: column;
+row-gap: 10px;
+`
 
 
 }
@@ -102,12 +108,13 @@ var nos = document.getElementById('nos')
 var eles = document.getElementById('eles')
 var equipe1Name = document.getElementById('equipe1Name')
 var equipe2Name = document.getElementById('equipe2Name')
+var container = document.querySelector('.container');
 
 nos.textContent = equipe1Name.value
 eles.textContent = equipe2Name.value
 
 
-
+container.style.cssText = 'filter: opacity(100%)'
 editDiv.style.display = 'none'
 
 
@@ -117,11 +124,13 @@ function resetar(){
     const editDiv = document.querySelector('.edit');
     var nos = document.getElementById('nos')
     var eles = document.getElementById('eles')
+    var container = document.querySelector('.container');
 
 
     nos.textContent = "Nós"
     eles.textContent = "Eles"
     editDiv.style.display = 'none'
+    container.style.cssText = 'filter: opacity(100%)'
 
 }
 
