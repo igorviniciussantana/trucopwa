@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <title>Truco +3</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
+    <meta name="description" content="PWA para contador de pontos no Truco" />
+    <link rel="apple-touch-icon" href="images/icon-216px.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="manifest" href="/manifest.json" />
+    <!--viewport para designers responsivos (mobo), content é a configuração-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1a1535" />
+  </head>
+
+  <body class="fullscreen" onload="carregar()">
+    <div class="container">
+      <!-- Cabeçalho da Página -->
+      <header>
+        <img onclick="mostrarEditar()" src="images/pencil.svg" alt="" srcset="" />
+        <h1>Truco +3</h1>
+      </header>
+ <!-- Fim do Cabeçalho -->
+
+ <!-- Container do Contador -->
+      <div class="game">
+        <div class="equipe1">
+          <h1 id="nos">Nós</h1>
+          <span id="pontosEquipe1">0</span>
+          <button value="1" class="button1">+1</button>
+          <button value="3" class="button1">+3</button>
+          <button value="6" class="button1">+6</button>
+          <button value="9" class="button1">+9</button>
+          <button value="12" class="button1">+12</button>
+        </div>
+        <div class="equipe2">
+          <h1 id="eles">Eles</h1>
+          <span id="pontosEquipe2">0</span>
+          <button  class="button2" value="1">+1</button>
+          <button  class="button2" value="3">+3</button>
+          <button class="button2" value="6">+6</button>
+          <button class="button2" value="9">+9</button>
+          <button class="button2" value="12">+12</button>
+        </div>
+
+         <!-- Fim do Contador-->
+
+         <!-- Container de editar os nomes -->
+
+        <div class="edit">
+<label for="equipe1Name">Equipe 1</label>
+<input id="equipe1Name" type="text" value="Nós">
+
+<label for="equipe2Name">Equipe 2</label>
+<input id="equipe2Name" type="text" value="Eles">
+
+<button onclick="editar()">Salvar</button>
+<button onclick="resetar()">Resetar</button>
+
+        </div>
+
+
+        <!-- Fim do container de editar os nomes -->
+
+        <button onclick="zerarJogo()">Zerar Jogo</button>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

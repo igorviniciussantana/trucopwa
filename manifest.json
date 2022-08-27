@@ -1,0 +1,16 @@
+{
+    "name": "Truco +3",
+    "short_name": "T+3",
+    "icons": [
+        {
+            "src": "images/icon-216px.png",
+            "sizes": "256x256",
+            "type": ""
+        }
+    ],
+    "lang": "pt-BR",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#1a1535",
+    "theme_color": "#1a1535"
+}
