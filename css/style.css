@@ -9,6 +9,7 @@
 
 .fullscreen {
   background-color: #1e1e1e;
+  position: relative;
 }
 
 .pencil {
@@ -45,6 +46,10 @@ header h1 {
   row-gap: 10px;
 
   padding: 0 10vw;
+}
+
+.x {
+  color: white;
 }
 
 .equipes {
@@ -105,15 +110,15 @@ header h1 {
 .edit {
   display: none;
   background-color: #131212;
-  position: fixed;
   z-index: 1;
-
-  top: 30vh;
-  left: 30vw;
-
   padding: 20px 40px;
-
   border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70vw;
+
 }
 
 .edit h1 {
@@ -140,4 +145,46 @@ header h1 {
   font-weight: 400;
   font-size: 24px;
   color: #1e1e1e;
+}
+
+.campeao {
+  max-width: 50%;
+  height: 100px;
+}
+
+.champion {
+  background-color: #131212;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  padding: 20px 40px;
+  border-radius: 8px;
+  max-width: 100%;
+  max-height: 100%;
+  z-index: 1;
+}
+
+.botao_mico {
+  background-color: #FF2424;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  width: 100%;
+  height: 35px;
+
+}
+
+.novo {
+  margin-top: 8px;
+  background-color: #131212;
+  border-radius: 5px;
+  color: white;
+  width: 100%;
+  height: 35px;
+  border-color: #FF2424;
 }

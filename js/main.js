@@ -35,10 +35,11 @@ if(resultado < 12){
         <div class="champion">
 
           <h1>Parabéns!</h1>
-          <p>A equipe ${nos.textContent} foi a vencedora</p>
+          <p >A equipe <span style="color:#ff2424;">${nos.textContent}</span> foi a vencedora</p>
           <span class="mico"></span>
-          <button onclick="gerarMico()">Gerar Mico</button>
-          <button onclick="novoJogo()">Novo Jogo</button>
+          <img class="campeao" src="images/champion.svg" />
+          <button class="botao_mico" onclick="gerarMico()">Gerar Mico</button>
+          <button class="novo" onclick="novoJogo()">Novo Jogo</button>
         </div>
         
         
@@ -63,13 +64,15 @@ if(resultado < 12){
         pontosEquipe2.textContent = 12;
 
         body.insertAdjacentHTML("afterbegin", `
+  
         <div class="champion">
 
           <h1>Parabéns!</h1>
-          <p>A equipe ${eles.textContent} foi a vencedora</p>
+          <p >A equipe <span style="color:#ff2424;">${eles.textContent}</span> foi a vencedora</p>
           <span class="mico"></span>
-          <button onclick="gerarMico()">Gerar Mico</button>
-          <button onclick="novoJogo()">Novo Jogo</button>
+          <img class="campeao" src="images/champion.svg" />
+          <button class="botao_mico" onclick="gerarMico()">Gerar Mico</button>
+          <button class="novo" onclick="novoJogo()">Novo Jogo</button>
         </div>
         
         
