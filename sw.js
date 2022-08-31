@@ -1,4 +1,4 @@
-let cacheName = "contador-truco";
+let cacheName = "contador_truco";
 let filesToCache = ["/", "/index.html", 
                 "/css/style.css", "/js/main.js"];
 
