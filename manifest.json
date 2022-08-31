@@ -3,9 +3,9 @@
     "short_name": "T+3",
     "icons": [
         {
-            "src": "images/icon-216px.png",
+            "src": "images/icon.png",
             "sizes": "256x256",
-            "type": ""
+            "type": "image/png"
         }
     ],
     "lang": "pt-BR",

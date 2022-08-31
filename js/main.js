@@ -1,9 +1,9 @@
-// window.onload = () => {
-//     "use strict";
-//     if ("serviceWorker" in navigator) {
-//         navigator.serviceWorker.register("./sw.js");
-//     }
-// };
+window.onload = () => {
+    "use strict";
+    if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("./sw.js");
+    }
+};
 
 const pontosEquipe1 = document.getElementById("pontosEquipe1");
 const pontosEquipe2 = document.getElementById("pontosEquipe2");
@@ -12,11 +12,10 @@ const micos = [
   "Virar uma Estrelinha",
   "Tirar uma foto constrangedora",
   "Gravar um vídeo falando que perdeu pro ganhador",
-  "Novo Mico",
 ];
 const equipesRegistradas = [
   { nome: "Eles", vitorias: 0 },
-  { nome: "igor", vitorias: 0 },
+  { nome: "Nos", vitorias: 0 },
 ];
 
 const body = document.querySelector(".fullscreen");
@@ -36,7 +35,7 @@ function carregar() {
         pontosEquipe1.textContent = resultado;
       } else {
         pontosEquipe1.textContent = 12;
-       
+
         const nosContent = nos.textContent;
 
         const verificaEquipe = equipesRegistradas.find(
@@ -59,6 +58,8 @@ function carregar() {
             vitorias: 1,
           });
         }
+        var container = document.querySelector(".container");
+        container.style.cssText = "filter: opacity(30%)";
 
         body.insertAdjacentHTML(
           "afterbegin",
@@ -67,7 +68,7 @@ function carregar() {
 
           <h1>Parabéns!</h1>
           <p >A equipe <span style="color:#ff2424;">${nos.textContent}</span> foi a vencedora</p>
-          <span class="mico"></span>
+          <span class="mico" style="color:#ff2424;"></span>
           <img class="campeao" src="images/champion.svg" />
           <button class="botao_mico" onclick="gerarMico()">Gerar Mico</button>
           <button class="novo" onclick="novoJogo()">Novo Jogo</button>
@@ -125,7 +126,7 @@ function carregar() {
 
           <h1>Parabéns!</h1>
           <p >A equipe <span style="color:#ff2424;">${eles.textContent}</span> foi a vencedora</p>
-          <span class="mico"></span>
+          <span class="mico" style="color:#ff2424;"></span>
           <img class="campeao" src="images/champion.svg" />
           <button class="botao_mico" onclick="gerarMico()">Gerar Mico</button>
           <button class="novo" onclick="novoJogo()">Novo Jogo</button>
@@ -207,14 +208,13 @@ function novoJogo() {
 }
 
 function mostrarVitorias() {
+  var container = document.querySelector(".container");
+  container.style.cssText = "filter: opacity(30%)";
   const equipesOrganizadas = equipesRegistradas.sort(function (a, b) {
     if (a.vitorias < b.vitorias) return 1;
     if (a.vitorias > b.vitorias) return -1;
     return 0;
   });
-
-
-  
 
   body.insertAdjacentHTML(
     "afterbegin",
@@ -231,13 +231,16 @@ function mostrarVitorias() {
   
   `
   );
-  
- 
-  equipesOrganizadas.slice(0, 5).reverse().forEach((equi) => {
 
-const lista = document.getElementById('listaLider');
+  equipesOrganizadas
+    .slice(0, 5)
+    .reverse()
+    .forEach((equi) => {
+      const lista = document.getElementById("listaLider");
 
-lista.insertAdjacentHTML('afterbegin', `
+      lista.insertAdjacentHTML(
+        "afterbegin",
+        `
 
 <li>
 <span class="vitorias">${equi.vitorias}</span>
@@ -245,21 +248,17 @@ lista.insertAdjacentHTML('afterbegin', `
 </li>
 
 
-`)
+`
+      );
+    });
 
-
-
-  });
-
-  console.log(equipesOrganizadas)
+  console.log(equipesOrganizadas);
 }
 
+function sair() {
+  var container = document.querySelector(".container");
+  container.style.cssText = "filter: opacity(100%)";
+  const placar = document.querySelector(".placar");
 
-function sair(){
-
-const placar = document.querySelector('.placar')
-
-placar.style.display = 'none'
-
-
+  placar.style.display = "none";
 }
