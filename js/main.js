@@ -141,6 +141,8 @@ function carregar() {
   });
 }
 
+carregar();
+
 function mostrarEditar() {
   const editDiv = document.querySelector(".edit");
   var container = document.querySelector(".container");
