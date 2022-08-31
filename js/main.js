@@ -11,13 +11,9 @@ const micos = [
   "Passar em Baixo da Mesa",
   "Virar uma Estrelinha",
   "Tirar uma foto constrangedora",
-  "Gravar um vídeo falando que perdeu pro ganhador",
-  "Novo Mico",
+  "Gravar um vídeo falando que perdeu pro ganhador"
 ];
-const equipesRegistradas = [
-  { nome: "Eles", vitorias: 0 },
-  { nome: "igor", vitorias: 0 },
-];
+const equipesRegistradas = [];
 
 const body = document.querySelector(".fullscreen");
 
@@ -115,7 +111,7 @@ function carregar() {
         }
 
         var container = document.querySelector(".container");
-        container.style.cssText = "filter: opacity(30%)";
+        container.style.cssText = "filter: blur(10px)";
 
         body.insertAdjacentHTML(
           "afterbegin",
@@ -144,7 +140,7 @@ function mostrarEditar() {
   const editDiv = document.querySelector(".edit");
   var container = document.querySelector(".container");
 
-  container.style.cssText = "filter: opacity(30%)";
+  container.style.cssText = "filter: blur(10px)";
 
   editDiv.style.cssText = `display: flex; 
 flex-direction: column;
@@ -163,7 +159,7 @@ function editar() {
   nos.textContent = equipe1Name.value;
   eles.textContent = equipe2Name.value;
 
-  container.style.cssText = "filter: opacity(100%)";
+  container.style.cssText = "filter: blur(0)";
   editDiv.style.display = "none";
 }
 
@@ -176,7 +172,7 @@ function resetar() {
   nos.textContent = "Nós";
   eles.textContent = "Eles";
   editDiv.style.display = "none";
-  container.style.cssText = "filter: opacity(100%)";
+  container.style.cssText = "filter: blur(0)";
 }
 
 function zerarJogo() {
@@ -201,7 +197,7 @@ function novoJogo() {
   pontosEquipe1.textContent = 0;
   pontosEquipe2.textContent = 0;
 
-  container.style.cssText = "filter: opacity(100%)";
+  container.style.cssText = "filter: blur(0)";
 
   console.log(equipesRegistradas);
 }
