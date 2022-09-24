@@ -3,73 +3,78 @@
   <head>
     <meta charset="utf-8" />
     <title>Truco +3</title>
-    <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
+    <link rel="shortcut icon" href="images/espada.png" type="image/png" />
     <meta name="description" content="PWA para contador de pontos no Truco" />
-    <link rel="apple-touch-icon" href="images/icon-216px.png" />
+    <link rel="apple-touch-icon" href="images/icon.png" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="manifest" href="/manifest.json" />
     <!--viewport para designers responsivos (mobo), content é a configuração-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#1a1535" />
+    <meta name="theme-color" content="#131212" />
   </head>
 
-  <body class="fullscreen" onload="carregar()">
+  <body class="fullscreen">
     <div class="container">
       <!-- Cabeçalho da Página -->
       <header>
-        <img onclick="mostrarEditar()" src="images/pencil.svg" class="pencil"/>
+        <img
+          onclick="mostrarEditar()"
+          src="images/pencil.svg"
+          class="pencil"
+          alt="lapis"
+        />
         <h1>Truco +3</h1>
-        <img onclick="mostrarVitorias()" src="images/trophy.svg" class="trophy">
+        <img
+          onclick="mostrarVitorias()"
+          src="images/trophy.svg"
+          class="trophy"
+          alt="trofeu"
+        />
       </header>
- <!-- Fim do Cabeçalho -->
+      <!-- Fim do Cabeçalho -->
 
- <!-- Container do Contador -->
+      <!-- Container do Contador -->
       <div class="game">
         <div class="equipes">
-        <div class="equipe1">
-          <h1 id="nos">Nós</h1>
-          <span id="pontosEquipe1">0</span>
-          <button value="1" class="button1">+1</button>
-          <button value="3" class="button1">+3</button>
-          <button value="6" class="button1">+6</button>
-          <button value="9" class="button1">+9</button>
-          <button value="12" class="button1">+12</button>
+          <div class="equipe1">
+            <h1 id="nos">Nós</h1>
+            <span id="pontosEquipe1">0</span>
+            <button value="1" class="button1">+1</button>
+            <button value="3" class="button1">+3</button>
+            <button value="6" class="button1">+6</button>
+            <button value="9" class="button1">+9</button>
+            <button value="12" class="button1">+12</button>
+          </div>
+          <div class="equipe2">
+            <h1 id="eles">Eles</h1>
+            <span id="pontosEquipe2">0</span>
+            <button class="button2" value="1">+1</button>
+            <button class="button2" value="3">+3</button>
+            <button class="button2" value="6">+6</button>
+            <button class="button2" value="9">+9</button>
+            <button class="button2" value="12">+12</button>
+          </div>
         </div>
-        <div class="equipe2">
-          <h1 id="eles">Eles</h1>
-          <span id="pontosEquipe2">0</span>
-          <button  class="button2" value="1">+1</button>
-          <button  class="button2" value="3">+3</button>
-          <button class="button2" value="6">+6</button>
-          <button class="button2" value="9">+9</button>
-          <button class="button2" value="12">+12</button>
-          
-        </div>
-</div>
-         <!-- Fim do Contador-->
+        <!-- Fim do Contador-->
 
-         <!-- Container de editar os nomes -->
-
-      
-
+        <!-- Container de editar os nomes -->
 
         <!-- Fim do container de editar os nomes -->
 
-        <button onclick="zerarJogo()" id='zerar'>Zerar Jogo</button>
+        <button onclick="zerarJogo()" id="zerar">Zerar Jogo</button>
       </div>
     </div>
 
     <div class="edit">
       <h1>Editar</h1>
-<label for="equipe1Name">Equipe 1</label>
-<input id="equipe1Name" type="text" value="Nós">
+      <label for="equipe1Name">Equipe 1</label>
+      <input id="equipe1Name" type="text" value="Nós" />
 
-<label for="equipe2Name">Equipe 2</label>
-<input id="equipe2Name" type="text" value="Eles">
+      <label for="equipe2Name">Equipe 2</label>
+      <input id="equipe2Name" type="text" value="Eles" />
 
-<button class="botao_mico" onclick="editar()">Salvar</button>
-<button class="novo" onclick="resetar()">Resetar</button>
-
+      <button class="botao_mico" onclick="editar()">Salvar</button>
+      <button class="novo" onclick="resetar()">Resetar</button>
     </div>
     <script src="js/main.js"></script>
   </body>
