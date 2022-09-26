@@ -62,6 +62,7 @@ você precisa ter instalado:
 ## 🖥️ - Rodando localmente
 
 Se os requisitos já estiverem cumpridos, siga os passos abaixo:
+
 Clone o projeto
 
 ```bash
