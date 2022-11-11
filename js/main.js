@@ -62,6 +62,7 @@ function carregar() {
           `
         <div class="champion">
 
+        <div class="championCard">
           <h1>Parabéns!</h1>
           <p >A equipe <span style="color:#ff2424;">${nos.textContent}</span> foi a vencedora</p>
           <span class="mico" style="color:#ff2424;text-align:center;"></span>
@@ -69,7 +70,7 @@ function carregar() {
           <button class="botao_mico" onclick="gerarMico()">Gerar Mico</button>
           <button class="novo" onclick="novoJogo()">Novo Jogo</button>
         </div>
-        
+        </div>
         
         
         `

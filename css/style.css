@@ -167,7 +167,7 @@ header h1 {
   height: 100px;
 }
 
-.champion {
+.championCard{
   background-color: #131212;
   color: white;
   display: flex;
@@ -175,13 +175,23 @@ header h1 {
   align-items: center;
   padding: 20px 40px;
   border-radius: 8px;
+  width: 70%;
+
+}
+
+.champion {
+  background-color: #1312121a;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 70vw;
+  height: 100vh;
+  width: 100%;
   z-index: 1;
 }
+
 
 .botao_mico {
   background-color: #FF2424;
