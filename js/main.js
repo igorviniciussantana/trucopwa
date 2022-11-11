@@ -191,16 +191,15 @@ function novoJogo() {
   const divChampion = document.querySelector(".champion");
   divChampion.remove();
   var container = document.querySelector(".container");
+  container.style.cssText = "filter: blur(0)";
 
   pontosEquipe1.textContent = 0;
   pontosEquipe2.textContent = 0;
-
-  container.style.cssText = "filter: blur(0)";
 }
 
 function mostrarVitorias() {
   var container = document.querySelector(".container");
-  container.style.cssText = "filter: opacity(30%)";
+  container.style.cssText = "filter: blur(10px)";
   const equipesOrganizadas = equipesRegistradas.sort(function (a, b) {
     if (a.vitorias < b.vitorias) return 1;
     if (a.vitorias > b.vitorias) return -1;
