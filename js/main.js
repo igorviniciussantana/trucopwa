@@ -144,7 +144,8 @@ function mostrarEditar() {
 
   editDiv.style.cssText = `display: flex; 
 flex-direction: column;
-row-gap: 10px;
+align-items: center;
+justify-content:center;
 `;
 }
 
@@ -212,12 +213,12 @@ function mostrarVitorias() {
     `
   
   <div class="placar">
-
+  <div class="placarCard">
     <h1>Placar</h1>
     <ul class="lideres" id="listaLider"></ul>
     <button class='novo' onclick="sair()">Sair</button>
   </div>
-  
+  </div>
   
   
   `
@@ -249,5 +250,5 @@ function sair() {
   container.style.cssText = "filter: opacity(100%)";
   const placar = document.querySelector(".placar");
 
-  placar.style.display = "none";
+  placar.remove();
 }
