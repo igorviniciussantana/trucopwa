@@ -31,7 +31,7 @@
 
 header {
   background-color: #131212;
-
+  margin-bottom: 24px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 15px 0;
