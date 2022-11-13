@@ -17,7 +17,8 @@ o link abaixo:
 
 - [Truco +3 - Protótipo](https://www.figma.com/file/ecaNxTI0AlqPjlDvPa8hRo/Truco-%2B3?node-id=0%3A1)
 
- 
+
+
 
 ## 🔗 - Deploy
 
@@ -48,7 +49,8 @@ sua PWA está instalada e pode ser utilizada livremente.
 Abaixo você confere algumas capturas do projeto já
 em produção:
 
-<img  src="https://user-images.githubusercontent.com/86114583/192171739-c8b62f76-0cdd-4cbc-a54e-709b1f370c1f.png"  width="200px"/><img  src="https://user-images.githubusercontent.com/86114583/192171741-a01cac80-b41b-4eae-9c2d-9e07c1fa7bf8.png"  width="200px"/><img  src="https://user-images.githubusercontent.com/86114583/192171744-58f43496-3c60-4d59-9245-dd7cd8a310ce.png"  width="200px"/>
+
+<img  src="https://user-images.githubusercontent.com/86114583/201526305-a0c18e29-7d5c-4418-a68c-8fbc605742c6.png"  width="200px"/><img  src="https://user-images.githubusercontent.com/86114583/201526349-c7f7a57f-c681-4929-ad09-f0cb7b1c4043.png"  width="200px"/><img  src="https://user-images.githubusercontent.com/86114583/201526413-f9bef195-72b0-4008-9615-51f3fb5a7544.png"  width="200px"/><img  src="https://user-images.githubusercontent.com/86114583/201526451-8f82ae21-7565-4b61-8d5e-0c2511d44073.png"  width="200px"/>
 
 
 ## ⬅️ - Requisitos
