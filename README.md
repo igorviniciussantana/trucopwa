@@ -26,7 +26,7 @@ O deploy do projeto foi feito utilizando a Vercel.
 Por ser uma PWA, você pode instalá-lo no seu dispositivo.
 Você pode conferi-lo acessando o link abaixo:
 
-- [Truco +3 - Deploy](https://trucopwa.vercel.app)
+- [Truco +3 - Deploy](https://pwatruco.vercel.app/)
 ## ⬇️ - Instalação
 
 Se você deseja instalar no seu computador, basta seguir os mesmos
