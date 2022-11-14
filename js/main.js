@@ -54,8 +54,8 @@ function carregar() {
             vitorias: 1,
           });
         }
-        var container = document.querySelector(".container");
-        container.style.cssText = "filter: opacity(30%)";
+     var container = document.querySelector(".container");
+        container.style.cssText = "filter: blur(10px)";
 
         body.insertAdjacentHTML(
           "afterbegin",
